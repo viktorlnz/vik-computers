@@ -1,0 +1,62 @@
+@import '../../estilos/button.scss';
+
+.product-container{
+    display: flex;
+
+    width: 90%;
+    margin: 50px auto;
+    padding: 10px;
+
+    background-color: #dfd7;
+    border: 1px solid #ccc4;
+
+    &__image{ 
+        width: 40%;
+        img{
+            width: 300px;
+            height: auto;
+        }
+    }
+
+    &__description{
+        width: 50%;
+
+        button{
+            @include button(24px, 15px, 20px);
+        }
+    }
+
+    p{
+        font-size: 14pt;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+    }
+
+    label{
+        display: inline-block;
+        margin: 5px auto;
+
+        color: #99f;
+
+        input{
+            border: 1px solid #9999;
+            width: 60px;
+
+            font-weight: 300;
+            color: #bb6;
+        }
+    }
+
+    .product{
+        &__name{
+            font-size: 20pt;
+            font-family:'Roboto', sans-serif;
+        }
+
+        &__price{
+            font-size: 18pt;
+            color: rgb(40, 59, 34);
+            font-family:'Roboto', sans-serif;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+@mixin button($size, $paddingVertical, $paddingHorizontal){
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: $paddingVertical $paddingHorizontal;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: $size;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+  
+    &:hover {
+        background-color: #3e8e41;
+    }
+}

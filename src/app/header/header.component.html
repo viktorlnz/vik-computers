@@ -1,0 +1,38 @@
+<header class="main-header">
+    <h1 class="main-header__title">
+        <a routerLink="produtos">
+            <span class="main-header__title--blue">Vik</span> <span class="main-header__title--orange">Computers</span>
+        </a>
+    </h1>
+
+    <div class="container-menu">
+
+        <nav class="main-header__menu">
+            <ul>
+                <li>
+                    <a routerLink="produtos">Produtos</a>
+                </li>
+                <li>
+                    <a href="carrinho">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Carrinho
+                        <span class="badge-carrinho">{{this.carrinhoService.getCarrinho().length}}</span>
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="contato">Contato</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <app-barra-pesquisa></app-barra-pesquisa>
+    </div>
+</header>

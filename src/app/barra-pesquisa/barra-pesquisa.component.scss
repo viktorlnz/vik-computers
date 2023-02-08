@@ -1,0 +1,21 @@
+.search-form {
+    display: flex;
+    input {
+        border: none;
+        background-color: #fff;
+        color: #333;
+        padding: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    button {
+        background-color: #388e3c;
+        color: #fff;
+        border: none;
+        padding: 0.5rem;
+        cursor: pointer;
+
+        &:hover{
+            color: #1565c0;
+        }
+    }
+}

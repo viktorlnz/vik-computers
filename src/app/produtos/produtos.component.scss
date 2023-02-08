@@ -1,0 +1,47 @@
+@import '../estilos/button.scss';
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+    &__card {
+      width: calc(33.3% - 20px);
+      margin: 10px;
+      background-color: #e6ffcc;
+      text-align: center;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  
+      &__link {
+        text-decoration: none;
+        color: #333;
+        display: block;
+      }
+  
+      img {
+        width: 100%;
+        height: auto;
+      }
+  
+      &__name {
+        font-size: 18px;
+        margin-top: 10px;
+      }
+  
+      &__price {
+        font-size: 14px;
+        margin-top: 5px;
+      }
+  
+      &__description {
+        font-size: 12px;
+        margin-top: 5px;
+        color: #777;
+      }
+  
+      &__buy-button {
+        @include button(14px, 10px, 20px);
+      }
+    }
+  }
+  
